@@ -41,9 +41,52 @@ const init = () => [
 ]).then(ans => {
     const manager = new Manager(ans.managerName, ans.managerID, ans.managerEmail, ans.managerOfficeNum)
     console.log(manager)
+    userOptions()
 
 })
 
 
 ]
+
+const userOptions = () => [
+    inquirer.prompt([
+        {
+
+            name: "roleChoice",
+            message: "Pick a role.",
+            type: "list",
+            choices: ["Engineer", "Intern","Generate team page"]
+
+        }
+        
+
+
+        
+]).then(ans => {
+    if (ans.roleChoice === "Engineer") {
+        console.log(ans.roleChoice)
+        
+    } else if(ans.roleChoice === "Intern") {
+        console.log(ans.roleChoice)
+    } else {
+        console.log(ans.roleChoice)
+
+    }
+
+})
+
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
 init();
