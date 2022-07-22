@@ -75,7 +75,7 @@ const userOptions = () => [
         
     } else {
         console.log(ans.roleChoice)
-        fs.writeFile("index.html", genHtml, err => {
+        fs.writeFile("index.html", genHtml(team), err => {
             if(err){
                 console.error("error")
             }
