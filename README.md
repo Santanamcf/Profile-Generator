@@ -18,6 +18,9 @@ To install this project download inquirer package.
 ## Usage
 To use this program run node.index.js
 
+## Video
+https://github.com/Santanamcf/Profile-Generator/blob/main/Untitled_%20Jul%2021%2C%202022%2010_29%20PM.webm
+
 ## License
 MIT License
 
